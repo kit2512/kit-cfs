@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:for_crush/theme.dart';
+import 'package:for_crush/views/page_5_2.dart';
 
 import 'views/views.dart';
 
@@ -34,18 +35,36 @@ class _HomeState extends State<Home> {
       Page4(onPassed: goToNextPage),
       Page42(onPassed: goToNextPage),
       Page5(onPassed: goToNextPage),
+      Page52(onPassed: goToNextPage),
       Page6(onPassed: goToNextPage),
       Page7(onPassed: goToNextPage),
-      Page8(onPassed: goToNextPage)
+      Page8(onPassed: goToNextPage),
+      Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              "assets/images/last.jpg",
+              fit: BoxFit.cover,
+            ),
+            Text(
+              "Sent to you from @kit2512 \n Please give me a star on github",
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+      )
     ];
   }
 
   void goToNextPage() {
-    setState(
-      () {
-        selectedPage += 1;
-      },
-    );
+    if (selectedPage < pages.length) {
+      setState(
+        () {
+          selectedPage += 1;
+        },
+      );
+    }
   }
 
   @override

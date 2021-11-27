@@ -28,7 +28,7 @@ class _WrongPressButtonState extends State<WrongPressButton> {
         ),
         if (_faults > 0)
           Text(
-            "Anh bấm nhầm nút ${_faults} lần rồi đó",
+            "Em bấm nhầm nút ${_faults} lần rồi đó",
             style: TextStyle(fontSize: 12, color: Colors.red),
           ),
         Row(

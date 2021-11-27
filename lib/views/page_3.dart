@@ -12,8 +12,13 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return DialogPage(
       children: [
+        Image.asset("assets/images/mugsy_15.png", fit: BoxFit.cover),
+        const SizedBox(
+          height: 20,
+        ),
         Text(
-          "Chắc anh cũng biết người đó là ai rồi nhỉ \n (๑•﹏•)",
+          "Chắc Em cũng biết người đó là ai rồi nhỉ \n (๑•﹏•)",
+          style: TextStyle(fontSize: 20),
           textAlign: TextAlign.center,
         ),
         WrongPressButton(

@@ -11,7 +11,18 @@ class Page6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return DialogPage(
       children: [
-        Text("Câu hỏi cuối cùng nà"),
+        Image.asset(
+          "assets/images/mugsy_21.png",
+          fit: BoxFit.cover,
+        ),
+        const SizedBox(
+          height: 20,
+        ),
+        Text(
+          "Câu hỏi cuối cùng nà",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20),
+        ),
         ElevatedButton(
           onPressed: onPassed,
           child: Text("Dạ anh hỏi điiii!"),

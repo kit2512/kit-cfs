@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class TextAnswer extends StatefulWidget {
   const TextAnswer({
     Key? key,
-    required this.correctAnswer,
+    required this.answers,
     required this.buttonText,
     required this.onPassed,
     this.hintText,
   }) : super(key: key);
-  final String correctAnswer;
+  final List<String> answers;
   final String buttonText;
   final String? hintText;
   final Function() onPassed;
@@ -19,10 +19,17 @@ class TextAnswer extends StatefulWidget {
 
 class _TextAnswerState extends State<TextAnswer> {
   final _controller = TextEditingController();
+  late final List<String> _answers;
   int _faults = 0;
 
+  @override
+  void initState() {
+    _answers = widget.answers.map((e) => e.toLowerCase()).toList();
+    super.initState();
+  }
+
   void onPressed() {
-    if (_controller.text.toLowerCase() != widget.correctAnswer.toLowerCase()) {
+    if (!_answers.contains(_controller.text.toLowerCase())) {
       setState(() {
         _faults++;
       });

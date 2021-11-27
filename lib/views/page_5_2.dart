@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/widgets.dart';
 
-class Page5 extends StatelessWidget {
-  const Page5({
+class Page52 extends StatelessWidget {
+  const Page52({
     Key? key,
     required this.onPassed,
   }) : super(key: key);
@@ -20,7 +20,7 @@ class Page5 extends StatelessWidget {
           height: 20,
         ),
         Text(
-          "Vậy em cũng biết 3 ngăn còn lại anh dành cho ai rồi đúng không",
+          "Bé của anh ngoan quá!",
           style: TextStyle(fontSize: 20),
           textAlign: TextAlign.center,
         ),

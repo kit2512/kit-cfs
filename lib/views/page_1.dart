@@ -12,8 +12,13 @@ class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return DialogPage(
       children: [
+        Image.asset("assets/images/mugsy_35.png", fit: BoxFit.cover),
+        SizedBox(
+          height: 20,
+        ),
         const Text(
-          "Anh à ! 💓️",
+          "Em à ! 💓️",
+          style: TextStyle(fontSize: 20),
         ),
         ElevatedButton(
           onPressed: onPassed,

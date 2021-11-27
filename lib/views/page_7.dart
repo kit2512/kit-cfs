@@ -11,8 +11,15 @@ class Page7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return DialogPage(
       children: [
+        Image.asset(
+          "assets/images/mugsy_12.png",
+          fit: BoxFit.cover,
+        ),
+        const SizedBox(
+          height: 20,
+        ),
         Text(
-          "Anh có yêu changg không?",
+          "Em có yêu ANH không?",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 30,

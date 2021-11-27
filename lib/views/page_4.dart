@@ -12,6 +12,11 @@ class Page4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return DialogPage(
       children: [
+        Image.asset("assets/images/mugsy_in_love_02.png",
+            fit: BoxFit.cover, width: 200),
+        const SizedBox(
+          height: 20,
+        ),
         Text(
           "Đó là ... ?",
           style: TextStyle(
@@ -20,9 +25,9 @@ class Page4 extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         TextAnswer(
-          correctAnswer: "Vũ",
+          answers: ["em", "Em", "nt Em", "nguyễn thị Em"],
           hintText: "Là..",
-          buttonText: "Đây phải không em?",
+          buttonText: "Đúng không anh?",
           onPassed: onPassed,
         ),
       ],
