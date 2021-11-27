@@ -1,0 +1,9 @@
+export 'page_1.dart';
+export 'page_2.dart';
+export 'page_3.dart';
+export 'page_4.dart';
+export 'page_5.dart';
+export 'page_6.dart';
+export 'page_7.dart';
+export 'page_8.dart';
+export 'page_4_2.dart';
